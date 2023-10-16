@@ -8,9 +8,9 @@ var url = "https://www.mobilassistance.com/Paket-Satin-Al";
 
   (async () => {
     const browser = await puppeteer.launch({
-        headless: false,
-        defaultViewport: null,
-        args: ['--start-maximized'] 
+        headless: "new",
+        defaultViewport: { width: 1920, height: 1080 },
+        args: ['--no-sandbox']
       });
     const page = await browser.newPage();
   
